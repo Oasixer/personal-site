@@ -1,16 +1,25 @@
 import React from 'react'
+import ParticlesDiv from '../components/ParticlesDiv'
+import Container from '../components/container'
+import Button from '../components/button'
 import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import index from './index'
+import styles from './style.css'
+import TextBox from '../components/textBox'
 
 const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  <>
+    <ParticlesDiv >
+      <Container style={{"margin":"0", "align-content": "flex-start"}}>
+        <Link style={{}} to="/">
+          home
+        </Link>
+        <TextBox style={{"align-self":"flex-start"}}>
+          test
+        </TextBox>
+      </Container>
+    </ParticlesDiv>
+  </>
 )
 
 export default SecondPage
